@@ -30,8 +30,10 @@ class Index extends React.Component {
                 <Banner />
                 <About />
                 <Features />
+                <!--
                 <Overview />
                 <Funfact />
+                -->
                 <Subscribe />
                 <Footer />
             </>
