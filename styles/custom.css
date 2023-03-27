@@ -1,0 +1,434 @@
+:root {
+    --fontFamily: 'Nunito', sans-serif;
+    --templateColor: #ff5325;
+    --templateColor2: #fd81d6;
+    --whiteColor: #ffffff;
+    --blackColor: #202124;
+    --paragraphColor: #202124;
+    --transition: .5s;
+}
+
+.piggy-container{
+    width: 40%;
+}
+
+lottie-player {
+    margin: 0 auto;
+}
+
+.star-banner{
+    color: #ff5325;
+}
+.fav-container{
+    width: 15%;
+}
+
+/*================================================
+Navbar CSS
+=================================================*/
+.crake-nav {
+    background: var(--whiteColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 0px !important;
+    width: 100%;
+    z-index: 666;
+    height: auto;
+}
+
+.crake-nav .navbar-toggler {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.crake-nav nav .navbar-brand img {
+    max-width: 400px;
+    height: 70px;
+}
+
+.crake-nav nav ul {
+    list-style-type: none;
+}
+
+.crake-nav nav .navbar-nav li {
+    position: relative;
+    padding: 15px 0 !important;
+}
+
+.crake-nav nav .navbar-nav li a {
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--blackColor) !important;
+    padding: 0 0 !important;
+    margin: 0 17px;
+    position: relative;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.crake-nav nav .navbar-nav li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    background: var(--blackColor);
+    opacity: 0;
+    border-radius: 50%;
+    visibility: hidden;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.crake-nav nav .navbar-nav li a:hover::before {
+    opacity: 1;
+    visibility: visible;
+    left: -12px;
+}
+
+.crake-nav nav .navbar-nav li a.active::before {
+    opacity: 1;
+    visibility: visible;
+    left: -12px;
+}
+
+.crake-nav nav .navbar-nav li:hover a::before {
+    opacity: 1;
+    visibility: visible;
+    left: -12px;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu {
+    -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+    background: var(--whiteColor);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 220px;
+    z-index: 99;
+    padding: 20px 0;
+    opacity: 0;
+    border-radius: 5px;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li {
+    position: relative;
+    padding: 0 !important;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li a {
+    font-size: 15px;
+    padding: 5px 15px !important;
+    margin: 0;
+    display: block;
+    color: #716c80 !important;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li a::before {
+    left: 0;
+    background: var(--whiteColor);
+    opacity: 0;
+    visibility: hidden;
+    top: 12px;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li a:hover {
+    color: var(--templateColor) !important;
+    padding-left: 25px !important;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li a:hover::before {
+    left: 13px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li a.active {
+    color: var(--templateColor) !important;
+    padding-left: 25px !important;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li a.active::before {
+    left: 13px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li .dropdown_menu {
+    position: absolute;
+    left: 95%;
+    top: 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li .dropdown_menu li a {
+    padding-left: 15px !important;
+    color: #716c80 !important;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li .dropdown_menu li a::before {
+    opacity: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li .dropdown_menu li a:hover {
+    color: var(--templateColor) !important;
+    padding-left: 25px !important;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li .dropdown_menu li a:hover::before {
+    left: 13px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li .dropdown_menu li a.active {
+    color: var(--templateColor) !important;
+    padding-left: 25px !important;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li .dropdown_menu li a.active::before {
+    left: 13px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li:hover .dropdown_menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    top: -20px !important;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li:hover a {
+    padding-left: 25px !important;
+    color: var(--templateColor) !important;
+}
+
+.crake-nav nav .navbar-nav li .dropdown_menu li:hover a::before {
+    left: 13px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.crake-nav nav .navbar-nav li:hover ul {
+    opacity: 1 !important;
+    visibility: visible !important;
+    top: 100%;
+}
+
+.crake-nav nav .others-option .navbar-nav {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.crake-nav nav .others-option .navbar-nav .cart-wrapper {
+    position: relative;
+    padding: 0 !important;
+}
+
+.crake-nav nav .others-option .navbar-nav .cart-wrapper a {
+    margin: 0 0 0 10px !important;
+}
+
+.crake-nav nav .others-option .navbar-nav .cart-wrapper a .cart-icon {
+    line-height: 52px;
+    font-size: 25px;
+}
+
+.crake-nav nav .others-option .navbar-nav .cart-wrapper a span {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    background: var(--whiteColor);
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    top: 8px;
+    color: var(--whiteColor);
+    right: -8px;
+}
+
+.crake-nav nav .others-option .navbar-nav li {
+    padding: 0 !important;
+}
+
+.crake-nav nav .others-option .navbar-nav li a {
+    margin: 0 22px !important;
+}
+
+.crake-nav nav .others-option .navbar-nav li a::before {
+    display: none;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu {
+    cursor: pointer;
+    width: 32px;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu .bar-1 {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: var(--whiteColor);
+    display: block;
+    border-radius: 50%;
+    margin-bottom: 2px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu .bar-1::before, .crake-nav nav .others-option .navbar-nav li .side-menu .bar-1::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    background: var(--whiteColor);
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu .bar-1::after {
+    right: -24px;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu .bar-2 {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    margin-bottom: 2px;
+    background: var(--whiteColor);
+    display: block;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu .bar-2::before, .crake-nav nav .others-option .navbar-nav li .side-menu .bar-2::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    background: var(--whiteColor);
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu .bar-2::after {
+    right: -24px;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu .bar-3 {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: var(--whiteColor);
+    margin-bottom: 2px;
+    display: block;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu .bar-3::before, .crake-nav nav .others-option .navbar-nav li .side-menu .bar-3::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    background: var(--whiteColor);
+    border-radius: 50%;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu .bar-3::after {
+    right: -24px;
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu:hover .bar-2::after, .crake-nav nav .others-option .navbar-nav li .side-menu:focus .bar-2::after {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.crake-nav nav .others-option .navbar-nav li .side-menu:hover .bar-3::after, .crake-nav nav .others-option .navbar-nav li .side-menu:hover .bar-3::before, .crake-nav nav .others-option .navbar-nav li .side-menu:focus .bar-3::after, .crake-nav nav .others-option .navbar-nav li .side-menu:focus .bar-3::before {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.crake-nav.marketing-navbar nav .navbar-nav li a {
+    color: #716c80 !important;
+}
+
+.crake-nav.marketing-navbar nav .navbar-nav li a::before {
+    background: var(--templateColor);
+}
+
+.crake-nav.marketing-navbar nav .navbar-nav li a:hover, .crake-nav.marketing-navbar nav .navbar-nav li a:focus, .crake-nav.marketing-navbar nav .navbar-nav li a.active {
+    color: var(--templateColor) !important;
+}
+
+.crake-nav.marketing-navbar nav .navbar-nav li .side-menu .bar-1 {
+    background: #716c80;
+}
+
+.crake-nav.marketing-navbar nav .navbar-nav li .side-menu .bar-1::before, .crake-nav.marketing-navbar nav .navbar-nav li .side-menu .bar-1::after {
+    background: #716c80;
+}
+
+.crake-nav.marketing-navbar nav .navbar-nav li .side-menu .bar-2 {
+    background: #716c80;
+}
+
+.crake-nav.marketing-navbar nav .navbar-nav li .side-menu .bar-2::before, .crake-nav.marketing-navbar nav .navbar-nav li .side-menu .bar-2::after {
+    background: #716c80;
+}
+
+.crake-nav.marketing-navbar nav .navbar-nav li .side-menu .bar-3 {
+    background: #716c80;
+}
+
+.crake-nav.marketing-navbar nav .navbar-nav li .side-menu .bar-3::before, .crake-nav.marketing-navbar nav .navbar-nav li .side-menu .bar-3::after {
+    background: #716c80;
+}
+
+.crake-nav.marketing-navbar.is-sticky {
+    background: var(--whiteColor) !important;
+}
+
+.crake-nav.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 999;
+    -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--whiteColor) !important;
+    -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
