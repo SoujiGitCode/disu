@@ -14,7 +14,7 @@ class Overview extends React.Component {
 
                     <div className="overview-box">
                         <div className="row h-100 justify-content-center align-items-center">
-                            <div className="col-lg-6 col-md-6 overview-img p-5">
+                            <div className="col-lg-6 col-md-6 overview-img w-25">
                                 <LottieContainer name={"saving"}/>
                             </div>
 
@@ -37,8 +37,8 @@ class Overview extends React.Component {
                                     zapatos</h3>
                             </div>
 
-                            <div className="col-lg-6 col-md-6 app-fetured-item">
-                                <img src='/images/disu/caracas.png' alt="image" />
+                            <div className="col-lg-6 col-md-6 app-fetured-item w-25">
+                                <img src='/images/disu/caracas.png' alt="image" className="border-r"/>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ class Overview extends React.Component {
                     <div className="overview-box">
                         <div className="row h-100 justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-6 overview-img d-flex justify-content-center">
-                                <div className={"w-50"}>
+                                <div className={"w-25"}>
                                     <LottieContainer  name={"error"}/>
                                 </div>
 

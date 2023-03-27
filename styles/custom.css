@@ -46,6 +46,10 @@ lottie-player {
 .suscribe-section{
     padding-top: 50px;
 }
+
+.border-r{
+    border-radius: 15px;
+}
 /*================================================
 Navbar CSS
 =================================================*/
