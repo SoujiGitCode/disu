@@ -31,34 +31,39 @@ class Banner extends React.Component {
     render() {
         return (
             <>
-                <div className="main-banner marketing-home">
+                <div className="main-banner marketing-home orange-section">
                     <div className="d-table">
                         <div className="d-table-cell">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-6 col-md-12">
                                         <div className="hero-content">
-                                            <h1>Ahorrar no debe ser complicado</h1>
-                                            <p className="d-inline-flex">Por eso, hemos creado una plataforma sencilla y efectiva que te permitirá conseguir descuentos exclusivos en tus productos y servicios
-                                                favoritos.
+                                            <h1 className="banner-h1">Hacemos tus compras más accesibles</h1>
+                                            <p className="d-inline-flex text-white">Descubre y conoce los comercios
+                                                cercanos a ti. En cada compra obtienes un descuento inmediato.
                                                 <div className={"fav-container d-flex"}>
                                                     <LottieContainer name={"fav"}/>
                                                 </div>
 
+
                                             </p>
-
-
-                                            
-                                            <Link href="#beneficios">
-                                                <a className="btn btn-primary">¿Cómo podemos ayudarte?</a>
+                                            <Link href="#"><a className="text-white"><i className="icofont-play-alt-3 text-white"></i> Lanzamiento en Junio. Únete a la lista de espera</a>
                                             </Link>
                                             <br/><br/>
-                                            <Link href="#"><a ><i className="icofont-play-alt-3"></i> Lanzamiento en diciembre. Únete ahora.</a>
-                                            </Link>
+
+                                            <form action="#">
+                                                <input type="email" placeholder="Déjanos tu e-mail " className="form-control" />
+                                                <button type="submit" className="btn btn-primary ">Lista de espera</button>
+                                            </form>
+                                            <br/>
+                                            <p className="d-inline-flex text-white">
+                                                Hasta 20% de descuento en tus compras
+                                            </p>
+
                                         </div>
                                     </div>
                                     
-                                    <div className="col-lg-6 col-md-12">
+                                    <div className="col-lg-6 col-md-12 d-flex justify-content-center">
                                         <div className="app-img">
                                             <img
                                                 src='/images/disu/banner-1-t.png'

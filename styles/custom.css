@@ -1,7 +1,9 @@
 :root {
     --fontFamily: 'Nunito', sans-serif;
     --templateColor: #ff5325;
-    --templateColor2: #fd81d6;
+    --templateColor2: #fa95da;
+    --templateColor3: #5b1dd8;
+    --templateColor4: #3c1884;
     --whiteColor: #ffffff;
     --blackColor: #202124;
     --paragraphColor: #202124;
@@ -23,6 +25,27 @@ lottie-player {
     width: 15%;
 }
 
+.app-img{
+    width: 300px;
+}
+
+.orange-section{
+    background: var(--templateColor) !important;
+    color: var(--whiteColor);
+}
+
+.banner-h1{
+    color: var(--whiteColor) !important;
+    font-size: 70px;
+}
+
+.error-container{
+    width: 50%;
+}
+
+.suscribe-section{
+    padding-top: 50px;
+}
 /*================================================
 Navbar CSS
 =================================================*/

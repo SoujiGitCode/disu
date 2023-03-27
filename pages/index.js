@@ -29,8 +29,7 @@ class Index extends React.Component {
                 <Navbar />
                 <Banner />
                 <About />
-                <Features />
-
+                <Overview />
                 <Subscribe />
                 <Footer />
             </>

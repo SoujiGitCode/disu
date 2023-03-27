@@ -4,7 +4,7 @@ import Link from 'next/link';
 class Footer extends Component {
     render() {
         return (
-            <footer className="footer-area ptb-100 pb-0 bg-image">
+            <footer className="footer-area">
 
                 <div className="copyright-area">
                     <div className="container">

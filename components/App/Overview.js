@@ -5,115 +5,66 @@ import LottieContainer from "../Lottie/LottieContainer";
 class Overview extends React.Component {
     render() {
         return (
-            <section className="overview-section ptb-100">
+            <section className="overview-section ptb-100" id="beneficios">
                 <div className="container">
                     <div className="section-title">
-                        <h2>Destacados</h2>
+                        <h2>Beneficios</h2>
                         <div className="bar"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
 
                     <div className="overview-box">
                         <div className="row h-100 justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-6 overview-img p-5">
-                                <LottieContainer name={"bags"}/>
+                                <LottieContainer name={"saving"}/>
                             </div>
 
                             <div className="col-lg-6 col-md-6 overview-content">
                                 <div className="icon">
-                                    <i className="icofont-power"></i>
+                                    <i className="icofont-money"></i>
                                 </div>
-                                <h3>Fast and Smooth</h3>
-                                <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
-
-                                <ul>
-                                    <li>Unimited Video Call</li>
-                                    <li>Add Favourite contact</li>
-                                    <li>Camera Filter</li>
-                                </ul>
-                                <Link href="/#">
-                                    <a className="btn btn-primary">Read More</a>
-                                </Link>
+                                <h3>Hasta 20% de descuento en toda la factura. ¿ Increible, no?</h3>
                             </div>
                         </div>
                     </div>
 
-                    <div className="overview-box">
+                    <div className="overview-box ">
                         <div className="row h-100 justify-content-center align-items-center">
                             <div className="col-lg-6 col-md-6 overview-content">
                                 <div className="icon">
-                                    <i className="icofont-share-alt"></i>
+                                    <i className="icofont-location-pin"></i>
                                 </div>
-                                <h3>Share your passion to the world</h3>
-                                <p>Plan ahead by day, week, or month, and see project status at a glance. Search and
-                                    filter to focus in on anything form a single project to an individual
-                                    person's workload.</p>
-
-                                <ul>
-                                    <li>Unimited Video Call</li>
-                                    <li>Add Favourite contact</li>
-                                    <li>Camera Filter</li>
-                                </ul>
-                                <Link href="/#">
-                                    <a className="btn btn-primary">Read More</a>
-                                </Link>
+                                <h3>Gracias a la geolocalización vas a poder descubrir nuevos lugares. Eso si, ponte tus
+                                    zapatos</h3>
                             </div>
 
                             <div className="col-lg-6 col-md-6 app-fetured-item">
-                                <img src='/images/disu/disu-essentials.png' alt="image" />
+                                <img src='/images/disu/caracas.png' alt="image" />
                             </div>
                         </div>
                     </div>
 
                     <div className="overview-box">
                         <div className="row h-100 justify-content-center align-items-center">
-                            <div className="col-lg-6 col-md-6 overview-img">
-                                <img src='/images/disu/disu-phrase.png' alt="image" />
+                            <div className="col-lg-6 col-md-6 overview-img d-flex justify-content-center">
+                                <div className={"w-50"}>
+                                    <LottieContainer  name={"error"}/>
+                                </div>
+
                             </div>
 
                             <div className="col-lg-6 col-md-6 overview-content">
                                 <div className="icon">
-                                    <i className="icofont-ui-messaging"></i>
+                                    <i className="icofont-close-circled"></i>
                                 </div>
-                                <h3>Constant Updates</h3>
-                                <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
+                                <h3>No más cupones, no más pagos anticipados. El descuento cuando lo necesites, siempre.
+                                </h3>
 
-                                <ul>
-                                    <li>Unimited Video Call</li>
-                                    <li>Add Favourite contact</li>
-                                    <li>Camera Filter</li>
-                                </ul>
-                                <Link href="/#">
-                                    <a className="btn btn-primary">Read More</a>
-                                </Link>
                             </div>
                         </div>
                     </div>
 
-                    <div className="overview-box">
-                        <div className="row h-100 justify-content-center align-items-center">
-                            <div className="col-lg-6 col-md-6 overview-content">
-                                <div className="icon">
-                                    <i className="icofont-users-social"></i>
-                                </div>
-                                <h3>We provide proffesional staff</h3>
-                                <p>Plan ahead by day, week, or month, and see project status at a glance. Search and filter to focus in on anything form a single project to an individual person's workload.</p>
 
-                                <ul>
-                                    <li>Unimited Video Call</li>
-                                    <li>Add Favourite contact</li>
-                                    <li>Camera Filter</li>
-                                </ul>
-                                <a href="/#" className="btn btn-primary">Read More</a>
-                            </div>
-
-                            <div className="col-lg-6 col-md-6 overview-img p-5">
-                                <img src='/images/disu/banner-5.png' alt="image" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="overview-box modern-flexible">
+                    <div className="overview-box modern-flexible d-none">
                         <div className="row h-100 justify-content-center align-items-center">
                             <div className="col-lg-4 col-md-6">
                                 <div className="single-item right-icon">

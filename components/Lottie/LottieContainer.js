@@ -5,10 +5,11 @@ import stonks from "./animations/stonks.json"
 import saving from "./animations/saving.json"
 import piggy from "./animations/piggy.json"
 import bags from "./animations/bags.json"
+import error from "./animations/error.json"
 
 const LottieContainer = ({name}) => {
     const animations = {
-        fav: fav, shopping: shopping, stonks: stonks, saving: saving, piggy : piggy, bags: bags
+        fav: fav, shopping: shopping, stonks: stonks, saving: saving, piggy : piggy, bags: bags, error:error
     }
 
     const animation = animations[name] || animations['fav'];

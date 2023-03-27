@@ -101,7 +101,7 @@ class Navbar extends React.Component {
                                         </li>
                                         <li className="nav-item">
                                             <Link activeClassName="active" href="#services">
-                                                <a className="nav-link">Quienes somos</a>
+                                                <a className="nav-link">Por qué Disu?</a>
                                             </Link>
                                         </li>
                                         <li className="nav-item">
@@ -110,7 +110,7 @@ class Navbar extends React.Component {
                                             </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link activeClassName="active" href="#contact">
+                                            <Link activeClassName="active" href="#suscribirse">
                                                 <a className="nav-link">Suscribirse</a>
                                             </Link>
                                         </li>
